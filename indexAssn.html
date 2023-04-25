@@ -5,10 +5,29 @@
     <title>CSS 1st Assignment</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .header{
+        .userInfo{
             color: aqua;
             background-color: black;
-
+            padding: 20px 10px 20px 10px;
+            margin-right: 530px;
+            
+            
+        }
+        .navItem{
+            color: purple;
+            background-color:peru;
+            margin-right: 530px;
+            padding: 20px 5px 20px 5px;
+            
+        }
+        .userItem{
+            margin-right: 20px;
+        }
+        .navName{
+            margin-right: 20px;
+        }
+        .footerItem{
+            margin-right: 10px;
         }
     </style>
     
@@ -17,55 +36,48 @@
     
     
     
+
     
-    <table class="header">
-        <tr>
-            <td>
-                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;<span> Mohit Sharma</span>&nbsp;&nbsp;
-            </td>
-            <td>
-                <i class="fa fa-phone-square"  aria-hidden="true"></i>&nbsp;<span> 123456789</span>&nbsp;&nbsp;
-            </td>
-            <td>
-                <i class="fa fa-envelope"  aria-hidden="true"></i>&nbsp;<span> mohit.sharma@gmail.com</span>
-            </td>
-            
-        </tr>
-    </table>
+
+    <header class="userInfo">
+        <i class="fa fa-user" aria-hidden="true"></i><span class="userItem"> Mohit Sharma</span>
+        <i class="fa fa-phone-square" aria-hidden="true"></i><span class="userItem"> 123456789</span>
+        <i class="fa fa-envelope"  aria-hidden="true"></i><span class="userItem"> mohit.sharma@gmail.com</span>
+    </header>
     <br>
 
-    <nav>
+    <nav class="navItem">
         
-            <a href="home.html" target="frame">Home</a>&nbsp;&nbsp;&nbsp;
-            <a href="techstack.html" target="frame">TechStack</a>&nbsp;&nbsp;&nbsp;
-            <a href="education.html" target="frame">Education</a>&nbsp;&nbsp;&nbsp;
-            <a href="contactus.html" target="frame">Contact Us</a>&nbsp;&nbsp;&nbsp;
-            <a href="basicList.html" target="frame">List</a>&nbsp;&nbsp;&nbsp;
-            <a href="personal.html" target="frame">Personal</a>
+            <a href="home.html" target="frame"><span class="navName">Home</span></a>      
+            <a href="techstack.html" target="frame"><span class="navName">TechStack</span></a>
+            <a href="education.html" target="frame"><span class="navName">Education</span></a>
+            <a href="contactus.html" target="frame"><span class="navName">Contact Us</span></a>
+            <a href="basicList.html" target="frame"><span class="navName">List</span></a>
+            <a href="personal.html" target="frame"><span class="navName">Personal</span></a>
             <a href="#" target="frame">Others</a>
         
     </nav>
     <br>
     <iframe height="500px" width="800px" name="frame"></iframe>
 
-    <table >
-        <tr>
-            <td>Follow Me &nbsp;&nbsp; </td>
-            <td>
-                <a href="https://www.facebook.com/login/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;
-            </td>
-            <td>
-                <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;
-            </td>
-            <td>
-                <a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
-            </td>
-            <td>
-                <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>&nbsp;&nbsp;
+    
+           
 
-            </td>
-        </tr>
-    </table>
+    <footer class="footerItem">
+        <span class="footerItem">Follow Me</span>
+        <a  class="footerItem" href="https://www.facebook.com/login/">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a  class="footerItem" href="https://www.instagram.com/accounts/login/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a  class="footerItem" href="https://in.linkedin.com/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a  class="footerItem" href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+        </a>
+    </footer>
 
     
 </body>
