@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <style>
-        .inputType{
-            border: 2px double blueviolet;
-            border-radius: 50px 22px;
+
+        * {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        label {
+            color: cadetblue;
+            font-size: x-large;
+        }
+
+        input {
+            width: 400px;
+            height: 25px;
+            border: 1px solid blurywood;
+            border-radius: 10px;
+            color: cadetblue;
+            text-transform: capitalize;
+        }
+
+        input [type="text"] {
+            text-transform: capitalize;
+
+        }
+        input [type="email"]{
+            color: chocolate;
+        }
+        #submit:hover{
+            background-color: blurlywood;
+        }
+
+        button [type="reset"]:hover{
+            color: brown;  
         }
     </style>
 </head>
@@ -20,43 +51,27 @@
         <table>
             <tbody>
                 <tr>
-                    <td>
-                        <lable>Full Name: </lable>
-                    </td>
-                    <td><input class="inputType" type="text" maxlength="30" required></td>
+                    <td><lable>Full Name: </lable></td>
+                    <td><input type="text" maxlength="40" placeholder="Max character length is 40" required></td>
                 </tr>
                 <tr>
-                    <td>
-                        <lable>Mobile No: </lable>
-                    </td>
-                    <td><input class="inputType" type="numbber" maxlength="10" required></td>
+                    <td><lable>Mobile No: </lable></td>
+                    <td><input  type="tel" maxlength="10" required></td>
                 </tr>
                 <tr>
-                    <td>
-                        <lable>Email Id: </lable>
-                    </td>
+                    <td><lable>Email Id: </lable></td>
                     <td><input class="inputType" type="text" placeholder="abc@gmail.com"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <lable>Enquiry:</lable>
-                    </td>
-                    <td>
-                        <textarea rows="7" cols="50"></textarea>
-                    </td>
-                    <tr>
-                    <td>
-                        <button type="submit">submit</button>
-                        </td>
-                      
-                     
-                        <td>
-                            <button type="reset">Clear All</button>
-                        </td>
-                        </tr>
-                    
-                    
-                
+                    <td><lable>Enquiry:</lable></td>
+                    <td><textarea rows="7" cols="50"></textarea></td>
+                <tr>
+                    <td><button type="submit" id="submit">submit</button></td>
+                    <td><button type="reset">Clear All</button></td>
+                </tr>
+
+
+
 
 
 
